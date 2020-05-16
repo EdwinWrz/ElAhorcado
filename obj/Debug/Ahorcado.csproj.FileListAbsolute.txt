@@ -8,3 +8,13 @@ C:\Users\EDWIN JOSUE\source\repos\Ahorcado\bin\Debug\Ahorcado.exe
 C:\Users\EDWIN JOSUE\source\repos\Ahorcado\bin\Debug\Ahorcado.pdb
 C:\Users\EDWIN JOSUE\source\repos\Ahorcado\obj\Debug\Ahorcado.exe
 C:\Users\EDWIN JOSUE\source\repos\Ahorcado\obj\Debug\Ahorcado.pdb
+C:\Users\Melvin Perdomo\Source\Repos\ElAhorcado\bin\Debug\Ahorcado.exe.config
+C:\Users\Melvin Perdomo\Source\Repos\ElAhorcado\bin\Debug\Ahorcado.exe
+C:\Users\Melvin Perdomo\Source\Repos\ElAhorcado\bin\Debug\Ahorcado.pdb
+C:\Users\Melvin Perdomo\Source\Repos\ElAhorcado\obj\Debug\Ahorcado.csprojAssemblyReference.cache
+C:\Users\Melvin Perdomo\Source\Repos\ElAhorcado\obj\Debug\Ahorcado.fAhorcado.resources
+C:\Users\Melvin Perdomo\Source\Repos\ElAhorcado\obj\Debug\Ahorcado.Properties.Resources.resources
+C:\Users\Melvin Perdomo\Source\Repos\ElAhorcado\obj\Debug\Ahorcado.csproj.GenerateResource.cache
+C:\Users\Melvin Perdomo\Source\Repos\ElAhorcado\obj\Debug\Ahorcado.csproj.CoreCompileInputs.cache
+C:\Users\Melvin Perdomo\Source\Repos\ElAhorcado\obj\Debug\Ahorcado.exe
+C:\Users\Melvin Perdomo\Source\Repos\ElAhorcado\obj\Debug\Ahorcado.pdb
