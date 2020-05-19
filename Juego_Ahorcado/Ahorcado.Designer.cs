@@ -42,7 +42,7 @@
             this.p1 = new System.Windows.Forms.PictureBox();
             this.bIntentar = new System.Windows.Forms.Button();
             this.p3 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tIntento = new System.Windows.Forms.TextBox();
             this.p7 = new System.Windows.Forms.PictureBox();
             this.p10 = new System.Windows.Forms.PictureBox();
             this.p5 = new System.Windows.Forms.PictureBox();
@@ -52,6 +52,7 @@
             this.p2 = new System.Windows.Forms.PictureBox();
             this.p4 = new System.Windows.Forms.PictureBox();
             this.bSeleccionar = new System.Windows.Forms.Button();
+            this.p11 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
@@ -64,6 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.p8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p11)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,9 +78,9 @@
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Location = new System.Drawing.Point(644, 72);
+            this.panel1.Location = new System.Drawing.Point(707, 63);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(203, 164);
+            this.panel1.Size = new System.Drawing.Size(203, 173);
             this.panel1.TabIndex = 9;
             // 
             // label4
@@ -151,10 +153,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.p11);
             this.groupBox1.Controls.Add(this.p1);
             this.groupBox1.Controls.Add(this.bIntentar);
             this.groupBox1.Controls.Add(this.p3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tIntento);
             this.groupBox1.Controls.Add(this.p7);
             this.groupBox1.Controls.Add(this.p10);
             this.groupBox1.Controls.Add(this.p5);
@@ -165,7 +168,7 @@
             this.groupBox1.Controls.Add(this.p4);
             this.groupBox1.Location = new System.Drawing.Point(3, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(634, 173);
+            this.groupBox1.Size = new System.Drawing.Size(696, 173);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ahorcado";
@@ -189,6 +192,7 @@
             this.bIntentar.TabIndex = 3;
             this.bIntentar.Text = "Intentar";
             this.bIntentar.UseVisualStyleBackColor = true;
+            this.bIntentar.Click += new System.EventHandler(this.bIntentar_Click);
             // 
             // p3
             // 
@@ -201,13 +205,14 @@
             this.p3.TabStop = false;
             this.p3.Visible = false;
             // 
-            // textBox1
+            // tIntento
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 29);
-            this.textBox1.TabIndex = 2;
+            this.tIntento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tIntento.Location = new System.Drawing.Point(6, 83);
+            this.tIntento.MaxLength = 1;
+            this.tIntento.Name = "tIntento";
+            this.tIntento.Size = new System.Drawing.Size(100, 29);
+            this.tIntento.TabIndex = 2;
             // 
             // p7
             // 
@@ -307,11 +312,22 @@
             this.bSeleccionar.UseVisualStyleBackColor = true;
             this.bSeleccionar.Click += new System.EventHandler(this.bSeleccionar_Click);
             // 
+            // p11
+            // 
+            this.p11.Image = ((System.Drawing.Image)(resources.GetObject("p11.Image")));
+            this.p11.Location = new System.Drawing.Point(631, 19);
+            this.p11.Name = "p11";
+            this.p11.Size = new System.Drawing.Size(58, 48);
+            this.p11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.p11.TabIndex = 4;
+            this.p11.TabStop = false;
+            this.p11.Visible = false;
+            // 
             // Ahorcado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 275);
+            this.ClientSize = new System.Drawing.Size(922, 330);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bSeleccionar);
@@ -332,6 +348,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.p8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -351,7 +368,7 @@
         private System.Windows.Forms.PictureBox p1;
         private System.Windows.Forms.Button bIntentar;
         private System.Windows.Forms.PictureBox p3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tIntento;
         private System.Windows.Forms.PictureBox p7;
         private System.Windows.Forms.PictureBox p10;
         private System.Windows.Forms.PictureBox p5;
@@ -361,5 +378,6 @@
         private System.Windows.Forms.PictureBox p2;
         private System.Windows.Forms.PictureBox p4;
         private System.Windows.Forms.Button bSeleccionar;
+        private System.Windows.Forms.PictureBox p11;
     }
 }
