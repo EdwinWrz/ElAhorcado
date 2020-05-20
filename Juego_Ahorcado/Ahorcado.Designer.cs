@@ -54,7 +54,8 @@
             this.p2 = new System.Windows.Forms.PictureBox();
             this.p4 = new System.Windows.Forms.PictureBox();
             this.bSeleccionar = new System.Windows.Forms.Button();
-            this.il = new System.Windows.Forms.ImageList(this.components);
+            this.iAhorcado = new System.Windows.Forms.ImageList(this.components);
+            this.pAhorcado = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p11)).BeginInit();
@@ -68,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.p8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pAhorcado)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -326,17 +328,62 @@
             this.bSeleccionar.UseVisualStyleBackColor = true;
             this.bSeleccionar.Click += new System.EventHandler(this.bSeleccionar_Click);
             // 
-            // il
+            // iAhorcado
             // 
-            this.il.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.il.ImageSize = new System.Drawing.Size(16, 16);
-            this.il.TransparentColor = System.Drawing.Color.Transparent;
+            this.iAhorcado.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iAhorcado.ImageStream")));
+            this.iAhorcado.TransparentColor = System.Drawing.Color.Transparent;
+            this.iAhorcado.Images.SetKeyName(0, "A.PNG");
+            this.iAhorcado.Images.SetKeyName(1, "Ahorcado.png");
+            this.iAhorcado.Images.SetKeyName(2, "Ahorcado1.png");
+            this.iAhorcado.Images.SetKeyName(3, "Ahorcado2.png");
+            this.iAhorcado.Images.SetKeyName(4, "Ahorcado3.png");
+            this.iAhorcado.Images.SetKeyName(5, "Ahorcado4.png");
+            this.iAhorcado.Images.SetKeyName(6, "Ahorcado5.png");
+            this.iAhorcado.Images.SetKeyName(7, "B.PNG");
+            this.iAhorcado.Images.SetKeyName(8, "C.PNG");
+            this.iAhorcado.Images.SetKeyName(9, "D.PNG");
+            this.iAhorcado.Images.SetKeyName(10, "E.PNG");
+            this.iAhorcado.Images.SetKeyName(11, "F.PNG");
+            this.iAhorcado.Images.SetKeyName(12, "G.PNG");
+            this.iAhorcado.Images.SetKeyName(13, "H.PNG");
+            this.iAhorcado.Images.SetKeyName(14, "I.PNG");
+            this.iAhorcado.Images.SetKeyName(15, "J.PNG");
+            this.iAhorcado.Images.SetKeyName(16, "K.PNG");
+            this.iAhorcado.Images.SetKeyName(17, "L.PNG");
+            this.iAhorcado.Images.SetKeyName(18, "M.PNG");
+            this.iAhorcado.Images.SetKeyName(19, "N.PNG");
+            this.iAhorcado.Images.SetKeyName(20, "Ñ.PNG");
+            this.iAhorcado.Images.SetKeyName(21, "O.PNG");
+            this.iAhorcado.Images.SetKeyName(22, "P.PNG");
+            this.iAhorcado.Images.SetKeyName(23, "Q.PNG");
+            this.iAhorcado.Images.SetKeyName(24, "R.PNG");
+            this.iAhorcado.Images.SetKeyName(25, "S.PNG");
+            this.iAhorcado.Images.SetKeyName(26, "T.PNG");
+            this.iAhorcado.Images.SetKeyName(27, "U.PNG");
+            this.iAhorcado.Images.SetKeyName(28, "V.PNG");
+            this.iAhorcado.Images.SetKeyName(29, "W.PNG");
+            this.iAhorcado.Images.SetKeyName(30, "X.PNG");
+            this.iAhorcado.Images.SetKeyName(31, "Y.PNG");
+            this.iAhorcado.Images.SetKeyName(32, "Z.PNG");
+            // 
+            // pAhorcado
+            // 
+            this.pAhorcado.BackgroundImage = global::Juego_Ahorcado.Properties.Resources.Ahorcado;
+            this.pAhorcado.Image = global::Juego_Ahorcado.Properties.Resources.Ahorcado;
+            this.pAhorcado.Location = new System.Drawing.Point(705, 71);
+            this.pAhorcado.Name = "pAhorcado";
+            this.pAhorcado.Size = new System.Drawing.Size(210, 205);
+            this.pAhorcado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pAhorcado.TabIndex = 10;
+            this.pAhorcado.TabStop = false;
+            this.pAhorcado.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Ahorcado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(927, 448);
+            this.Controls.Add(this.pAhorcado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bSeleccionar);
             this.Controls.Add(this.groupBox1);
@@ -358,6 +405,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.p8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pAhorcado)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -388,6 +436,7 @@
         private System.Windows.Forms.PictureBox p4;
         private System.Windows.Forms.Button bSeleccionar;
         private System.Windows.Forms.PictureBox p11;
-        private System.Windows.Forms.ImageList il;
+        private System.Windows.Forms.ImageList iAhorcado;
+        private System.Windows.Forms.PictureBox pAhorcado;
     }
 }
