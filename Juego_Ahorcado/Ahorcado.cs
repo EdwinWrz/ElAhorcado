@@ -36,7 +36,7 @@ namespace Juego_Ahorcado
                         int NumeroElemento = GetRandomNumber(0.0, Palabras.Count());
                         string SelectedWord = Palabras[NumeroElemento].ToString();
                         int Size = SelectedWord.Length;
-                        string[] word = SelectedWord.Split(' ');
+
                     MessageBox.Show(Palabras[NumeroElemento].ToString());
 
 
@@ -167,9 +167,7 @@ namespace Juego_Ahorcado
                         {
                             MessageBox.Show(ex.Message);
                         }
-
             }
-
                         public int GetRandomNumber(double min, double max)
                         {
                             Random rnd = new Random();
@@ -178,9 +176,9 @@ namespace Juego_Ahorcado
 
         private void bIntentar_Click(object sender, EventArgs e)
         {
-
-
-
+            
         }
+
+    
     }
 }
