@@ -282,7 +282,11 @@ namespace Juego_Ahorcado
 
         void SetErrorsInPictureBox()
         {
-
+            //Aqui agregar codigo que evalúa cuántos errores hay y asignar a Picturebox de Errores la imagen que corresponde según la cantidad de errores
+            //El picture box debe estar inicializado en Visible=false, para que el usuario no vea al principio
+            //Cuando se equivoca, aparece con la imagen "Ahorcado" de la carpeta Bin
+            //Cuando llega a 6 (o 7, no recuerdo), entonces debe aparecer un mensaje que diga que perdió
+            //Cuando el usuario pierde, entonces todo se reinicia (selectedWord, Cantidad de Errores, Pictures Boxes mostrados, etc...)
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

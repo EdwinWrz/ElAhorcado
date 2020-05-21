@@ -386,7 +386,7 @@
             // 
             this.lAhorcado.ImageIndex = 32;
             this.lAhorcado.ImageList = this.iAhorcado;
-            this.lAhorcado.Location = new System.Drawing.Point(715, 69);
+            this.lAhorcado.Location = new System.Drawing.Point(705, 71);
             this.lAhorcado.Name = "lAhorcado";
             this.lAhorcado.Size = new System.Drawing.Size(210, 205);
             this.lAhorcado.TabIndex = 10;
