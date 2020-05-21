@@ -185,7 +185,7 @@ namespace Juego_Ahorcado
             {
                 Indice++;
 
-                if (Indice > 7)
+                if (Indice > 5)
                 {
                     Indice = 0;
                 }

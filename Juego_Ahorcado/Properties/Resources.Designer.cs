@@ -59,15 +59,5 @@ namespace Juego_Ahorcado.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Ahorcado {
-            get {
-                object obj = ResourceManager.GetObject("Ahorcado", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
