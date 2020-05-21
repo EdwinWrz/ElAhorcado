@@ -13,11 +13,13 @@ namespace Juego_Ahorcado
 {
     public partial class Ahorcado : Form
     {
+            private int Indice;
             List<string> Palabras = new List<string>();
             AhorcadoComponents AhorcadoClase;
             public Ahorcado()
             {
                 InitializeComponent();
+                Indice = 0;
             }
 
             private void Ahorcado_Load(object sender, EventArgs e)
@@ -176,7 +178,19 @@ namespace Juego_Ahorcado
 
         private void bIntentar_Click(object sender, EventArgs e)
         {
-            
+            int i = 0;
+            if (i == 1)
+            { }
+            else
+            {
+                Indice++;
+
+                if (Indice > 7)
+                {
+                    Indice = 0;
+                }
+                lAhorcado.ImageIndex = Indice;
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
