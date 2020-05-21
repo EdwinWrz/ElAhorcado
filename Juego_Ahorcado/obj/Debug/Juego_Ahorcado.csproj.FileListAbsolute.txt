@@ -18,3 +18,13 @@ C:\Users\EDWIN JOSUE\Source\Repos\ElAhorcado\Juego_Ahorcado\obj\Debug\Juego_Ahor
 C:\Users\EDWIN JOSUE\Source\Repos\ElAhorcado\Juego_Ahorcado\bin\Debug\Juego_Ahorcado.exe.config
 C:\Users\EDWIN JOSUE\Source\Repos\ElAhorcado\Juego_Ahorcado\bin\Debug\Juego_Ahorcado.exe
 C:\Users\EDWIN JOSUE\Source\Repos\ElAhorcado\Juego_Ahorcado\bin\Debug\Juego_Ahorcado.pdb
+C:\Users\luisl\Documents\UJN\2020\2020.2\321 FEPO 2114 PROGRAMACIÓN DE OBJETOS II\Juego G3\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.csprojAssemblyReference.cache
+C:\Users\luisl\Documents\UJN\2020\2020.2\321 FEPO 2114 PROGRAMACIÓN DE OBJETOS II\Juego G3\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.Ahorcado.resources
+C:\Users\luisl\Documents\UJN\2020\2020.2\321 FEPO 2114 PROGRAMACIÓN DE OBJETOS II\Juego G3\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.Properties.Resources.resources
+C:\Users\luisl\Documents\UJN\2020\2020.2\321 FEPO 2114 PROGRAMACIÓN DE OBJETOS II\Juego G3\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.csproj.GenerateResource.cache
+C:\Users\luisl\Documents\UJN\2020\2020.2\321 FEPO 2114 PROGRAMACIÓN DE OBJETOS II\Juego G3\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.csproj.CoreCompileInputs.cache
+C:\Users\luisl\Documents\UJN\2020\2020.2\321 FEPO 2114 PROGRAMACIÓN DE OBJETOS II\Juego G3\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.exe
+C:\Users\luisl\Documents\UJN\2020\2020.2\321 FEPO 2114 PROGRAMACIÓN DE OBJETOS II\Juego G3\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.pdb
+C:\Users\luisl\Documents\UJN\2020\2020.2\321 FEPO 2114 PROGRAMACIÓN DE OBJETOS II\Juego G3\Juego_Ahorcado\bin\Debug\Juego_Ahorcado.exe.config
+C:\Users\luisl\Documents\UJN\2020\2020.2\321 FEPO 2114 PROGRAMACIÓN DE OBJETOS II\Juego G3\Juego_Ahorcado\bin\Debug\Juego_Ahorcado.exe
+C:\Users\luisl\Documents\UJN\2020\2020.2\321 FEPO 2114 PROGRAMACIÓN DE OBJETOS II\Juego G3\Juego_Ahorcado\bin\Debug\Juego_Ahorcado.pdb
