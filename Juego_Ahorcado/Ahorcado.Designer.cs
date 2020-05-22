@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ahorcado));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -36,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tEquivocaciones = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -53,10 +52,8 @@
             this.p7 = new System.Windows.Forms.PictureBox();
             this.p1 = new System.Windows.Forms.PictureBox();
             this.p3 = new System.Windows.Forms.PictureBox();
-            this.pAhorcado = new System.Windows.Forms.PictureBox();
             this.bSeleccionar = new System.Windows.Forms.Button();
-            this.iAhorcado = new System.Windows.Forms.ImageList(this.components);
-            this.lAhorcado = new System.Windows.Forms.Label();
+            this.pAhorcado = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p10)).BeginInit();
@@ -80,7 +77,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.tEquivocaciones);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Location = new System.Drawing.Point(9, 242);
@@ -133,13 +130,13 @@
             this.textBox5.Size = new System.Drawing.Size(82, 29);
             this.textBox5.TabIndex = 2;
             // 
-            // textBox4
+            // tEquivocaciones
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(375, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(82, 29);
-            this.textBox4.TabIndex = 2;
+            this.tEquivocaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tEquivocaciones.Location = new System.Drawing.Point(375, 3);
+            this.tEquivocaciones.Name = "tEquivocaciones";
+            this.tEquivocaciones.Size = new System.Drawing.Size(82, 29);
+            this.tEquivocaciones.TabIndex = 2;
             // 
             // textBox3
             // 
@@ -172,7 +169,6 @@
             this.groupBox1.Controls.Add(this.p7);
             this.groupBox1.Controls.Add(this.p1);
             this.groupBox1.Controls.Add(this.p3);
-            this.groupBox1.Controls.Add(this.pAhorcado);
             this.groupBox1.Location = new System.Drawing.Point(3, 63);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(696, 173);
@@ -312,6 +308,7 @@
             this.p1.TabIndex = 1;
             this.p1.TabStop = false;
             this.p1.Visible = false;
+            this.p1.Click += new System.EventHandler(this.p1_Click);
             // 
             // p3
             // 
@@ -324,16 +321,6 @@
             this.p3.TabStop = false;
             this.p3.Visible = false;
             // 
-            // pAhorcado
-            // 
-            this.pAhorcado.Location = new System.Drawing.Point(469, 6);
-            this.pAhorcado.Name = "pAhorcado";
-            this.pAhorcado.Size = new System.Drawing.Size(210, 205);
-            this.pAhorcado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pAhorcado.TabIndex = 10;
-            this.pAhorcado.TabStop = false;
-            this.pAhorcado.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // bSeleccionar
             // 
             this.bSeleccionar.Location = new System.Drawing.Point(3, 12);
@@ -344,59 +331,21 @@
             this.bSeleccionar.UseVisualStyleBackColor = true;
             this.bSeleccionar.Click += new System.EventHandler(this.bSeleccionar_Click);
             // 
-            // iAhorcado
+            // pAhorcado
             // 
-            this.iAhorcado.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iAhorcado.ImageStream")));
-            this.iAhorcado.TransparentColor = System.Drawing.Color.White;
-            this.iAhorcado.Images.SetKeyName(0, "A.PNG");
-            this.iAhorcado.Images.SetKeyName(1, "Ahorcado1.png");
-            this.iAhorcado.Images.SetKeyName(2, "Ahorcado2.png");
-            this.iAhorcado.Images.SetKeyName(3, "Ahorcado3.png");
-            this.iAhorcado.Images.SetKeyName(4, "Ahorcado4.png");
-            this.iAhorcado.Images.SetKeyName(5, "Ahorcado5.png");
-            this.iAhorcado.Images.SetKeyName(6, "B.PNG");
-            this.iAhorcado.Images.SetKeyName(7, "C.PNG");
-            this.iAhorcado.Images.SetKeyName(8, "D.PNG");
-            this.iAhorcado.Images.SetKeyName(9, "E.PNG");
-            this.iAhorcado.Images.SetKeyName(10, "F.PNG");
-            this.iAhorcado.Images.SetKeyName(11, "G.PNG");
-            this.iAhorcado.Images.SetKeyName(12, "H.PNG");
-            this.iAhorcado.Images.SetKeyName(13, "I.PNG");
-            this.iAhorcado.Images.SetKeyName(14, "J.PNG");
-            this.iAhorcado.Images.SetKeyName(15, "K.PNG");
-            this.iAhorcado.Images.SetKeyName(16, "L.PNG");
-            this.iAhorcado.Images.SetKeyName(17, "M.PNG");
-            this.iAhorcado.Images.SetKeyName(18, "N.PNG");
-            this.iAhorcado.Images.SetKeyName(19, "Ñ.PNG");
-            this.iAhorcado.Images.SetKeyName(20, "O.PNG");
-            this.iAhorcado.Images.SetKeyName(21, "P.PNG");
-            this.iAhorcado.Images.SetKeyName(22, "Q.PNG");
-            this.iAhorcado.Images.SetKeyName(23, "R.PNG");
-            this.iAhorcado.Images.SetKeyName(24, "S.PNG");
-            this.iAhorcado.Images.SetKeyName(25, "T.PNG");
-            this.iAhorcado.Images.SetKeyName(26, "U.PNG");
-            this.iAhorcado.Images.SetKeyName(27, "V.PNG");
-            this.iAhorcado.Images.SetKeyName(28, "W.PNG");
-            this.iAhorcado.Images.SetKeyName(29, "X.PNG");
-            this.iAhorcado.Images.SetKeyName(30, "Y.PNG");
-            this.iAhorcado.Images.SetKeyName(31, "Z.PNG");
-            this.iAhorcado.Images.SetKeyName(32, "Ahorcado.jpg");
-            // 
-            // lAhorcado
-            // 
-            this.lAhorcado.ImageIndex = 32;
-            this.lAhorcado.ImageList = this.iAhorcado;
-            this.lAhorcado.Location = new System.Drawing.Point(705, 71);
-            this.lAhorcado.Name = "lAhorcado";
-            this.lAhorcado.Size = new System.Drawing.Size(210, 205);
-            this.lAhorcado.TabIndex = 10;
+            this.pAhorcado.Location = new System.Drawing.Point(705, 71);
+            this.pAhorcado.Name = "pAhorcado";
+            this.pAhorcado.Size = new System.Drawing.Size(210, 205);
+            this.pAhorcado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pAhorcado.TabIndex = 10;
+            this.pAhorcado.TabStop = false;
             // 
             // Ahorcado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(927, 292);
-            this.Controls.Add(this.lAhorcado);
+            this.Controls.Add(this.pAhorcado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bSeleccionar);
             this.Controls.Add(this.groupBox1);
@@ -431,7 +380,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tEquivocaciones;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -449,8 +398,6 @@
         private System.Windows.Forms.PictureBox p3;
         private System.Windows.Forms.Button bSeleccionar;
         private System.Windows.Forms.PictureBox p10;
-        private System.Windows.Forms.ImageList iAhorcado;
         private System.Windows.Forms.PictureBox pAhorcado;
-        private System.Windows.Forms.Label lAhorcado;
     }
 }

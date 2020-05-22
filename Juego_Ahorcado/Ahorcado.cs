@@ -14,7 +14,6 @@ namespace Juego_Ahorcado
 {
     public partial class Ahorcado : Form
     {
-        private int Indice;
         List<string> Palabras = new List<string>();
         AhorcadoComponents AhorcadoClase;
         string SelectedWord; //Palabra seleccionada
@@ -22,7 +21,6 @@ namespace Juego_Ahorcado
             public Ahorcado()
             {
                 InitializeComponent();
-                Indice = 0;
             }
 
             private void Ahorcado_Load(object sender, EventArgs e)
@@ -30,19 +28,11 @@ namespace Juego_Ahorcado
                 AhorcadoClase = new AhorcadoComponents();
                 Palabras = AhorcadoClase.SetWords();
             }
-
             private void bSeleccionar_Click(object sender, EventArgs e)
             {
-                string str1 = "Test";
-                for (int ctr = 0; ctr <= str1.Length - 1; ctr++)
-                {
-                    Console.Write("{0} ", str1[ctr]);
-                }
-
             tIntento.Enabled = true;
             bIntentar.Enabled = true;
             this.ActiveControl = tIntento;
-
             try
              {
                 int NumeroElemento = GetRandomNumber(0.0, Palabras.Count());
@@ -193,23 +183,21 @@ namespace Juego_Ahorcado
             tIntento.Clear();
             SetErrorsInPictureBox();
 
+            string ImageLocation;
+            String Equivocaiones = Convert.ToString(ContadorErrores);
+            ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\bin\" + ContadorErrores + ".jpg";
+            pAhorcado.ImageLocation = ImageLocation;
+            tEquivocaciones.Text = Equivocaiones;
+
             MessageBox.Show(ContadorErrores.ToString());
-
-            int i = 0;
-            if (i == 1)
+            if (ContadorErrores >5)
             {
-                
-            }
-            else
-            {
-                Indice++;
+                MessageBox.Show("Ud ha perdido");
+                bIntentar.Enabled = false;
 
-                if (Indice > 5)
-                {
-                    Indice = 0;
-                }
-                lAhorcado.ImageIndex = Indice;
             }
+            
+            
         }
 
         void FuncionContarErrores(string letra, string palabra)
@@ -319,6 +307,11 @@ namespace Juego_Ahorcado
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void p1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
