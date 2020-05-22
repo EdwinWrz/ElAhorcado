@@ -18,7 +18,10 @@ namespace Juego_Ahorcado
         AhorcadoComponents AhorcadoClase;
         string SelectedWord; //Palabra seleccionada
         int ContadorErrores = 0;
-            public Ahorcado()
+        int ContadorAciertos = 0;
+        int intentos = 0;
+        int Win = 0;
+        public Ahorcado()
             {
                 InitializeComponent();
             }
@@ -185,19 +188,26 @@ namespace Juego_Ahorcado
 
             string ImageLocation;
             String Equivocaiones = Convert.ToString(ContadorErrores);
+            String Aciertos = Convert.ToString(ContadorAciertos);
             ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\bin\" + ContadorErrores + ".jpg";
             pAhorcado.ImageLocation = ImageLocation;
             tEquivocaciones.Text = Equivocaiones;
-
-            MessageBox.Show(ContadorErrores.ToString());
+            tAciertos.Text = Aciertos;
+            int Acier = SelectedWord.Length;
+            //MessageBox.Show(ContadorErrores.ToString());
+            MessageBox.Show(ContadorAciertos.ToString());
             if (ContadorErrores >5)
             {
                 MessageBox.Show("Ud ha perdido");
                 bIntentar.Enabled = false;
-
+                tIntento.Visible = false;
+                intentos++;
             }
-            
-            
+            if (ContadorAciertos == Convert.ToInt32(Acier))
+            {
+                MessageBox.Show("Ganador!!!!1");
+                intentos++;
+            }           
         }
 
         void FuncionContarErrores(string letra, string palabra)
@@ -207,7 +217,6 @@ namespace Juego_Ahorcado
                 ContadorErrores++;
             }
         }
-
         List<int> GetPositions(string letra, string palabra)
         {
             List<int> Positions = new List<int>();
@@ -217,7 +226,9 @@ namespace Juego_Ahorcado
                 if(letra==palabra.ElementAt(i).ToString())
                 {
                     Positions.Add(i);
+                    ContadorAciertos++;
                 }
+
             }
 
             return Positions;

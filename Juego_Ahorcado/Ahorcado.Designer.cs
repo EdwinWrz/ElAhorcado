@@ -34,10 +34,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tWin = new System.Windows.Forms.TextBox();
             this.tEquivocaciones = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tAciertos = new System.Windows.Forms.TextBox();
+            this.tInten = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.p10 = new System.Windows.Forms.PictureBox();
             this.p0 = new System.Windows.Forms.PictureBox();
@@ -76,10 +76,10 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.tWin);
             this.panel1.Controls.Add(this.tEquivocaciones);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.tAciertos);
+            this.panel1.Controls.Add(this.tInten);
             this.panel1.Location = new System.Drawing.Point(9, 242);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(688, 47);
@@ -91,9 +91,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(478, 21);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Vidas";
+            this.label4.Text = "Juegos Ganado";
             // 
             // label3
             // 
@@ -122,37 +122,41 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Intentos";
             // 
-            // textBox5
+            // tWin
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(517, 3);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(82, 29);
-            this.textBox5.TabIndex = 2;
+            this.tWin.Enabled = false;
+            this.tWin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tWin.Location = new System.Drawing.Point(561, 3);
+            this.tWin.Name = "tWin";
+            this.tWin.Size = new System.Drawing.Size(82, 29);
+            this.tWin.TabIndex = 2;
             // 
             // tEquivocaciones
             // 
+            this.tEquivocaciones.Enabled = false;
             this.tEquivocaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tEquivocaciones.Location = new System.Drawing.Point(375, 3);
             this.tEquivocaciones.Name = "tEquivocaciones";
             this.tEquivocaciones.Size = new System.Drawing.Size(82, 29);
             this.tEquivocaciones.TabIndex = 2;
             // 
-            // textBox3
+            // tAciertos
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(194, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(82, 29);
-            this.textBox3.TabIndex = 2;
+            this.tAciertos.Enabled = false;
+            this.tAciertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tAciertos.Location = new System.Drawing.Point(194, 3);
+            this.tAciertos.Name = "tAciertos";
+            this.tAciertos.Size = new System.Drawing.Size(82, 29);
+            this.tAciertos.TabIndex = 2;
             // 
-            // textBox2
+            // tInten
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(55, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(82, 29);
-            this.textBox2.TabIndex = 2;
+            this.tInten.Enabled = false;
+            this.tInten.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tInten.Location = new System.Drawing.Point(55, 5);
+            this.tInten.Name = "tInten";
+            this.tInten.Size = new System.Drawing.Size(82, 29);
+            this.tInten.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -379,10 +383,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tWin;
         private System.Windows.Forms.TextBox tEquivocaciones;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tAciertos;
+        private System.Windows.Forms.TextBox tInten;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox p0;
         private System.Windows.Forms.Button bIntentar;
