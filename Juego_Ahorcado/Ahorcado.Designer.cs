@@ -37,7 +37,7 @@
             this.tWin = new System.Windows.Forms.TextBox();
             this.tEquivocaciones = new System.Windows.Forms.TextBox();
             this.tAciertos = new System.Windows.Forms.TextBox();
-            this.tInten = new System.Windows.Forms.TextBox();
+            this.tJuegosTotal = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.p10 = new System.Windows.Forms.PictureBox();
             this.p0 = new System.Windows.Forms.PictureBox();
@@ -79,7 +79,7 @@
             this.panel1.Controls.Add(this.tWin);
             this.panel1.Controls.Add(this.tEquivocaciones);
             this.panel1.Controls.Add(this.tAciertos);
-            this.panel1.Controls.Add(this.tInten);
+            this.panel1.Controls.Add(this.tJuegosTotal);
             this.panel1.Location = new System.Drawing.Point(9, 242);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(688, 47);
@@ -149,14 +149,14 @@
             this.tAciertos.Size = new System.Drawing.Size(82, 29);
             this.tAciertos.TabIndex = 2;
             // 
-            // tInten
+            // tJuegosTotal
             // 
-            this.tInten.Enabled = false;
-            this.tInten.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tInten.Location = new System.Drawing.Point(55, 5);
-            this.tInten.Name = "tInten";
-            this.tInten.Size = new System.Drawing.Size(82, 29);
-            this.tInten.TabIndex = 2;
+            this.tJuegosTotal.Enabled = false;
+            this.tJuegosTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tJuegosTotal.Location = new System.Drawing.Point(55, 5);
+            this.tJuegosTotal.Name = "tJuegosTotal";
+            this.tJuegosTotal.Size = new System.Drawing.Size(82, 29);
+            this.tJuegosTotal.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -173,6 +173,7 @@
             this.groupBox1.Controls.Add(this.p7);
             this.groupBox1.Controls.Add(this.p1);
             this.groupBox1.Controls.Add(this.p3);
+            this.groupBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.groupBox1.Location = new System.Drawing.Point(3, 63);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(696, 173);
@@ -337,6 +338,7 @@
             // 
             // pAhorcado
             // 
+            this.pAhorcado.ErrorImage = null;
             this.pAhorcado.Location = new System.Drawing.Point(705, 71);
             this.pAhorcado.Name = "pAhorcado";
             this.pAhorcado.Size = new System.Drawing.Size(210, 205);
@@ -348,6 +350,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(927, 292);
             this.Controls.Add(this.pAhorcado);
             this.Controls.Add(this.panel1);
@@ -386,7 +389,7 @@
         private System.Windows.Forms.TextBox tWin;
         private System.Windows.Forms.TextBox tEquivocaciones;
         private System.Windows.Forms.TextBox tAciertos;
-        private System.Windows.Forms.TextBox tInten;
+        private System.Windows.Forms.TextBox tJuegosTotal;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox p0;
         private System.Windows.Forms.Button bIntentar;
