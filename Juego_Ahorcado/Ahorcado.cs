@@ -42,8 +42,6 @@ namespace Juego_Ahorcado
                 int NumeroElemento =GetRandomNumber(0.0, Palabras.Count());
                 SelectedWord = Palabras[NumeroElemento].ToString();
                 int Size = SelectedWord.Length;
-
-                MessageBox.Show(SelectedWord);
                 string ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\bin\" + "inte" + ".jpg";
                 switch (Size)
                 {
@@ -259,7 +257,7 @@ namespace Juego_Ahorcado
             //Declarar perdedor
             if (ContadorErrores > 5)
             {
-                MessageBox.Show("Ud ha perdido");
+                MessageBox.Show("Usted es un perdedor :(");
                 pAhorcado.Visible = false;
                 bSeleccionar.Enabled = true;
                 bIntentar.Enabled = false;
@@ -276,7 +274,7 @@ namespace Juego_Ahorcado
             string PicAcertadas = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\bin\";
             if (p0.ImageLocation == PicAcertadas && p1.ImageLocation == PicAcertadas && p2.ImageLocation == PicAcertadas && p3.ImageLocation == PicAcertadas && p4.ImageLocation == PicAcertadas)
             {
-                MessageBox.Show("Ganador!!!!");
+                MessageBox.Show("Felicidades usted ganó!!!!");
                 bSeleccionar.Enabled = true;
                 bIntentar.Enabled = false;
                 tIntento.Visible = false;
@@ -295,7 +293,7 @@ namespace Juego_Ahorcado
                     string c32 = PicAcertadas + SelectedWord.ElementAt(2) + ".jpg";
                     if (p0.ImageLocation == c30 && p1.ImageLocation == c31 && p2.ImageLocation ==c32)
                     {
-                        MessageBox.Show("Ganador!!!!");
+                        MessageBox.Show("Felicidades usted ganó!!!!");
                         bSeleccionar.Enabled = true;
                         bIntentar.Enabled = false;
                         tIntento.Visible = false;
@@ -314,7 +312,7 @@ namespace Juego_Ahorcado
                     string c43 = PicAcertadas + SelectedWord.ElementAt(3) + ".jpg";
                     if (p0.ImageLocation == c40 && p1.ImageLocation == c41 && p2.ImageLocation == c42&&p3.ImageLocation==c43)
                     {
-                        MessageBox.Show("Ganador!!!!");
+                        MessageBox.Show("Felicidades usted ganó!!!!");
                         bSeleccionar.Enabled = true;
                         bIntentar.Enabled = false;
                         tIntento.Visible = false;
@@ -334,7 +332,7 @@ namespace Juego_Ahorcado
                     string c54 = PicAcertadas + SelectedWord.ElementAt(4) + ".jpg";
                     if (p0.ImageLocation == c50 && p1.ImageLocation == c51 && p2.ImageLocation == c52 && p3.ImageLocation == c53&&p4.ImageLocation==c54)
                     {
-                        MessageBox.Show("Ganador!!!!");
+                        MessageBox.Show("Felicidades usted ganó!!!!");
                         bSeleccionar.Enabled = true;
                         bIntentar.Enabled = false;
                         tIntento.Visible = false;
@@ -355,7 +353,7 @@ namespace Juego_Ahorcado
                     string c65 = PicAcertadas + SelectedWord.ElementAt(5) + ".jpg";
                     if (p0.ImageLocation == c60 && p1.ImageLocation == c61 && p2.ImageLocation == c62 && p3.ImageLocation == c63 && p4.ImageLocation == c64&&p5.ImageLocation==c65)
                     {
-                        MessageBox.Show("Ganador!!!!");
+                        MessageBox.Show("Felicidades usted ganó!!!!");
                         bSeleccionar.Enabled = true;
                         bIntentar.Enabled = false;
                         tIntento.Visible = false;
@@ -377,7 +375,7 @@ namespace Juego_Ahorcado
                     string c76 = PicAcertadas + SelectedWord.ElementAt(6) + ".jpg";
                     if (p0.ImageLocation == c70 && p1.ImageLocation == c71 && p2.ImageLocation == c72 && p3.ImageLocation == c73 && p4.ImageLocation == c74 && p5.ImageLocation == c75&&p6.ImageLocation==c76)
                     {
-                        MessageBox.Show("Ganador!!!!");
+                        MessageBox.Show("Felicidades usted ganó!!!!");
                         bSeleccionar.Enabled = true;
                         bIntentar.Enabled = false;
                         tIntento.Visible = false;
@@ -401,7 +399,7 @@ namespace Juego_Ahorcado
                     if (p0.ImageLocation == c80 && p1.ImageLocation == c81 && p2.ImageLocation == c82 && p3.ImageLocation == c83 && p4.ImageLocation == c84 && p5.ImageLocation == c85 && p6.ImageLocation == c86&&
                         p7.ImageLocation==c87)
                     {
-                        MessageBox.Show("Ganador!!!!");
+                        MessageBox.Show("Felicidades usted ganó!!!!");
                         bSeleccionar.Enabled = true;
                         bIntentar.Enabled = false;
                         tIntento.Visible = false;
@@ -426,7 +424,7 @@ namespace Juego_Ahorcado
                     if (p0.ImageLocation == c90 && p1.ImageLocation == c91 && p2.ImageLocation == c92 && p3.ImageLocation == c93 && p4.ImageLocation == c94 && p5.ImageLocation == c95 && p6.ImageLocation == c96 &&
                         p7.ImageLocation == c97&&p8.ImageLocation==c98)
                     {
-                        MessageBox.Show("Ganador!!!!");
+                        MessageBox.Show("Felicidades usted ganó!!!!");
                         bSeleccionar.Enabled = true;
                         bIntentar.Enabled = false;
                         tIntento.Visible = false;
@@ -452,7 +450,7 @@ namespace Juego_Ahorcado
                     if (p0.ImageLocation == c100 && p1.ImageLocation == c101 && p2.ImageLocation == c102 && p3.ImageLocation == c103 && p4.ImageLocation == c104 && p5.ImageLocation == c105 && p6.ImageLocation == c106 &&
                         p7.ImageLocation == c107 && p8.ImageLocation == c108&&p9.ImageLocation==c109)
                     {
-                        MessageBox.Show("Ganador!!!!");
+                        MessageBox.Show("Felicidades usted ganó!!!!");
                         bSeleccionar.Enabled = true;
                         bIntentar.Enabled = false;
                         tIntento.Visible = false;
@@ -479,7 +477,7 @@ namespace Juego_Ahorcado
                     if (p0.ImageLocation == c110 && p1.ImageLocation == c111 && p2.ImageLocation == c112 && p3.ImageLocation == c113 && p4.ImageLocation == c114 && p5.ImageLocation == c115 && p6.ImageLocation == c116 &&
                         p7.ImageLocation == c117 && p8.ImageLocation == c118 && p9.ImageLocation == c119&&p10.ImageLocation==c1110)
                     {
-                        MessageBox.Show("Ganador!!!!");
+                        MessageBox.Show("Felicidades usted ganó!!!!");
                         bSeleccionar.Enabled = true;
                         bIntentar.Enabled = false;
                         tIntento.Visible = false;

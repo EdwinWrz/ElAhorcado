@@ -81,6 +81,8 @@
             this.panel1.Controls.Add(this.tEquivocaciones);
             this.panel1.Controls.Add(this.tAciertos);
             this.panel1.Controls.Add(this.tJuegosTotal);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.ForeColor = System.Drawing.Color.Yellow;
             this.panel1.Location = new System.Drawing.Point(9, 242);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(688, 47);
@@ -90,36 +92,36 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(478, 21);
+            this.label4.Location = new System.Drawing.Point(477, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 13);
+            this.label4.Size = new System.Drawing.Size(118, 16);
             this.label4.TabIndex = 0;
             this.label4.Text = "Juegos Ganado";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(286, 19);
+            this.label3.Location = new System.Drawing.Point(276, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.Size = new System.Drawing.Size(119, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "Equivocaciones";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(143, 19);
+            this.label2.Location = new System.Drawing.Point(143, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(65, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Aciertos";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 21);
+            this.label1.Location = new System.Drawing.Point(4, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.Size = new System.Drawing.Size(62, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Intentos";
             // 
@@ -127,36 +129,36 @@
             // 
             this.tWin.Enabled = false;
             this.tWin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tWin.Location = new System.Drawing.Point(561, 3);
+            this.tWin.Location = new System.Drawing.Point(601, 3);
             this.tWin.Name = "tWin";
-            this.tWin.Size = new System.Drawing.Size(82, 29);
+            this.tWin.Size = new System.Drawing.Size(51, 29);
             this.tWin.TabIndex = 2;
             // 
             // tEquivocaciones
             // 
             this.tEquivocaciones.Enabled = false;
             this.tEquivocaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tEquivocaciones.Location = new System.Drawing.Point(375, 3);
+            this.tEquivocaciones.Location = new System.Drawing.Point(401, 6);
             this.tEquivocaciones.Name = "tEquivocaciones";
-            this.tEquivocaciones.Size = new System.Drawing.Size(82, 29);
+            this.tEquivocaciones.Size = new System.Drawing.Size(40, 29);
             this.tEquivocaciones.TabIndex = 2;
             // 
             // tAciertos
             // 
             this.tAciertos.Enabled = false;
             this.tAciertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tAciertos.Location = new System.Drawing.Point(194, 3);
+            this.tAciertos.Location = new System.Drawing.Point(214, 6);
             this.tAciertos.Name = "tAciertos";
-            this.tAciertos.Size = new System.Drawing.Size(82, 29);
+            this.tAciertos.Size = new System.Drawing.Size(38, 29);
             this.tAciertos.TabIndex = 2;
             // 
             // tJuegosTotal
             // 
             this.tJuegosTotal.Enabled = false;
             this.tJuegosTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tJuegosTotal.Location = new System.Drawing.Point(55, 5);
+            this.tJuegosTotal.Location = new System.Drawing.Point(72, 6);
             this.tJuegosTotal.Name = "tJuegosTotal";
-            this.tJuegosTotal.Size = new System.Drawing.Size(82, 29);
+            this.tJuegosTotal.Size = new System.Drawing.Size(39, 29);
             this.tJuegosTotal.TabIndex = 2;
             // 
             // groupBox1
@@ -176,6 +178,8 @@
             this.groupBox1.Controls.Add(this.p1);
             this.groupBox1.Controls.Add(this.p3);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Yellow;
             this.groupBox1.Location = new System.Drawing.Point(3, 63);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(696, 173);
@@ -186,7 +190,7 @@
             // p10
             // 
             this.p10.Image = ((System.Drawing.Image)(resources.GetObject("p10.Image")));
-            this.p10.Location = new System.Drawing.Point(631, 19);
+            this.p10.Location = new System.Drawing.Point(631, 25);
             this.p10.Name = "p10";
             this.p10.Size = new System.Drawing.Size(58, 48);
             this.p10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,7 +201,7 @@
             // p0
             // 
             this.p0.Image = ((System.Drawing.Image)(resources.GetObject("p0.Image")));
-            this.p0.Location = new System.Drawing.Point(6, 19);
+            this.p0.Location = new System.Drawing.Point(6, 25);
             this.p0.Name = "p0";
             this.p0.Size = new System.Drawing.Size(55, 48);
             this.p0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -208,7 +212,8 @@
             // bIntentar
             // 
             this.bIntentar.Enabled = false;
-            this.bIntentar.Location = new System.Drawing.Point(6, 118);
+            this.bIntentar.ForeColor = System.Drawing.Color.Black;
+            this.bIntentar.Location = new System.Drawing.Point(275, 114);
             this.bIntentar.Name = "bIntentar";
             this.bIntentar.Size = new System.Drawing.Size(100, 40);
             this.bIntentar.TabIndex = 3;
@@ -219,7 +224,7 @@
             // p2
             // 
             this.p2.Image = ((System.Drawing.Image)(resources.GetObject("p2.Image")));
-            this.p2.Location = new System.Drawing.Point(131, 19);
+            this.p2.Location = new System.Drawing.Point(131, 25);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(55, 48);
             this.p2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -231,7 +236,7 @@
             // 
             this.tIntento.Enabled = false;
             this.tIntento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tIntento.Location = new System.Drawing.Point(6, 83);
+            this.tIntento.Location = new System.Drawing.Point(275, 79);
             this.tIntento.MaxLength = 1;
             this.tIntento.Name = "tIntento";
             this.tIntento.Size = new System.Drawing.Size(100, 29);
@@ -242,7 +247,7 @@
             // p6
             // 
             this.p6.Image = ((System.Drawing.Image)(resources.GetObject("p6.Image")));
-            this.p6.Location = new System.Drawing.Point(381, 19);
+            this.p6.Location = new System.Drawing.Point(381, 25);
             this.p6.Name = "p6";
             this.p6.Size = new System.Drawing.Size(55, 48);
             this.p6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -253,7 +258,7 @@
             // p9
             // 
             this.p9.Image = ((System.Drawing.Image)(resources.GetObject("p9.Image")));
-            this.p9.Location = new System.Drawing.Point(567, 19);
+            this.p9.Location = new System.Drawing.Point(567, 25);
             this.p9.Name = "p9";
             this.p9.Size = new System.Drawing.Size(58, 48);
             this.p9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -264,7 +269,7 @@
             // p4
             // 
             this.p4.Image = ((System.Drawing.Image)(resources.GetObject("p4.Image")));
-            this.p4.Location = new System.Drawing.Point(256, 19);
+            this.p4.Location = new System.Drawing.Point(256, 25);
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(55, 48);
             this.p4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -275,7 +280,7 @@
             // p5
             // 
             this.p5.Image = ((System.Drawing.Image)(resources.GetObject("p5.Image")));
-            this.p5.Location = new System.Drawing.Point(317, 19);
+            this.p5.Location = new System.Drawing.Point(317, 25);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(58, 48);
             this.p5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -286,7 +291,7 @@
             // p8
             // 
             this.p8.Image = ((System.Drawing.Image)(resources.GetObject("p8.Image")));
-            this.p8.Location = new System.Drawing.Point(506, 19);
+            this.p8.Location = new System.Drawing.Point(506, 25);
             this.p8.Name = "p8";
             this.p8.Size = new System.Drawing.Size(55, 48);
             this.p8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -297,7 +302,7 @@
             // p7
             // 
             this.p7.Image = ((System.Drawing.Image)(resources.GetObject("p7.Image")));
-            this.p7.Location = new System.Drawing.Point(442, 19);
+            this.p7.Location = new System.Drawing.Point(442, 25);
             this.p7.Name = "p7";
             this.p7.Size = new System.Drawing.Size(58, 48);
             this.p7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -308,7 +313,7 @@
             // p1
             // 
             this.p1.Image = ((System.Drawing.Image)(resources.GetObject("p1.Image")));
-            this.p1.Location = new System.Drawing.Point(67, 19);
+            this.p1.Location = new System.Drawing.Point(67, 25);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(58, 48);
             this.p1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -320,7 +325,7 @@
             // p3
             // 
             this.p3.Image = ((System.Drawing.Image)(resources.GetObject("p3.Image")));
-            this.p3.Location = new System.Drawing.Point(192, 19);
+            this.p3.Location = new System.Drawing.Point(192, 25);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(58, 48);
             this.p3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -331,11 +336,12 @@
             // bSeleccionar
             // 
             this.bSeleccionar.BackColor = System.Drawing.Color.Transparent;
-            this.bSeleccionar.Location = new System.Drawing.Point(3, 12);
+            this.bSeleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bSeleccionar.Location = new System.Drawing.Point(211, 24);
             this.bSeleccionar.Name = "bSeleccionar";
-            this.bSeleccionar.Size = new System.Drawing.Size(91, 33);
+            this.bSeleccionar.Size = new System.Drawing.Size(250, 33);
             this.bSeleccionar.TabIndex = 7;
-            this.bSeleccionar.Text = "Seleccionar";
+            this.bSeleccionar.Text = "Seleccionar Palabra";
             this.bSeleccionar.UseVisualStyleBackColor = false;
             this.bSeleccionar.Click += new System.EventHandler(this.bSeleccionar_Click);
             // 
@@ -361,6 +367,7 @@
             this.Controls.Add(this.bSeleccionar);
             this.Controls.Add(this.groupBox1);
             this.Name = "Ahorcado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ahorcado";
             this.Load += new System.EventHandler(this.Ahorcado_Load);
             this.panel1.ResumeLayout(false);
