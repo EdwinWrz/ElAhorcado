@@ -72,6 +72,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -160,6 +161,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.p10);
             this.groupBox1.Controls.Add(this.p0);
             this.groupBox1.Controls.Add(this.bIntentar);
@@ -328,16 +330,18 @@
             // 
             // bSeleccionar
             // 
+            this.bSeleccionar.BackColor = System.Drawing.Color.Transparent;
             this.bSeleccionar.Location = new System.Drawing.Point(3, 12);
             this.bSeleccionar.Name = "bSeleccionar";
             this.bSeleccionar.Size = new System.Drawing.Size(91, 33);
             this.bSeleccionar.TabIndex = 7;
             this.bSeleccionar.Text = "Seleccionar";
-            this.bSeleccionar.UseVisualStyleBackColor = true;
+            this.bSeleccionar.UseVisualStyleBackColor = false;
             this.bSeleccionar.Click += new System.EventHandler(this.bSeleccionar_Click);
             // 
             // pAhorcado
             // 
+            this.pAhorcado.BackColor = System.Drawing.Color.Transparent;
             this.pAhorcado.ErrorImage = null;
             this.pAhorcado.Location = new System.Drawing.Point(705, 71);
             this.pAhorcado.Name = "pAhorcado";
@@ -350,7 +354,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(927, 292);
             this.Controls.Add(this.pAhorcado);
             this.Controls.Add(this.panel1);
